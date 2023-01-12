@@ -1,0 +1,7 @@
+h5py==3.7.0
+numpy==1.23.5
+ont-fast5-api==4.1.0
+packaging==21.3
+progressbar33==2.4
+pyparsing==3.0.9
+scipy==1.9.3
