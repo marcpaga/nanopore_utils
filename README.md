@@ -26,7 +26,7 @@ if not read_data.segmentation:
     print('This file does not have a reference')
 
 # normalize the raw signal
-med, mad = med_mad(read_data.raw)
+med, mad = med_mad(read_data.raw, factor = 1.0)
 norm_signal = normalize_signal(read_data.raw, med, mad)
 
 # read_data.segmentation contains the mapping between the DNA sequence and 
