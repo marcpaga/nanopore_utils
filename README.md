@@ -41,3 +41,16 @@ dna_in_raw = np.full(norm_signal.shape, '', dtype='U1')
 dna_in_raw[dna_bases_start_in_raw] = dna_bases
 
 ```
+
+## Resquiggle
+
+```
+from resquiggle import resquiggle_read_normalized
+
+mapping = resquiggle_read_normalized(
+    read_id = '0a0bdc5c-8f8f-41ea-a4d1-4ff6344fac3e', # this does not matter 
+    raw_signal = modelled_signal, #use the same as in norm_signal 
+    genome_seq = conditioning_dna_seq, # DNA sequence, as string that should match the raw signal e.g. 'ACGTACAGATC'
+    norm_signal = modelled_signal, #numpy array
+)
+```
